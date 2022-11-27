@@ -1,16 +1,71 @@
-h1 {
+body {
   font-family: "Playfair Display";
   font-style: normal;
-  font-weight: 700;
-  font-size: 70px;
-  line-height: 60px;
-  text-align: center;
 }
 
-p {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("./images/header-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
   text-align: center;
+  padding: 200px 0;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 95px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  color: #272044;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: white;
+  padding: 16px 32px;
+  display: inline-block;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
 }
